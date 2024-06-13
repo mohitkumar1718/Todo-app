@@ -13,9 +13,9 @@ const TodoList = ({list,setList, setEditTodo}) => {
         {
             list.map((todo)=>{
                 return (
-                    <li key={todo.id} className='list-none w-full h-10 my-auto mt-3 px-5 ' >
-                        <input className=' p-2 w-3/5 rounded-lg' type="text" name="" value={todo.title} onChange={(e)=>e.preventDefault()} id="" />
-                        <button className='bg-green-600 p-2 mx-2 rounded-lg' onClick={()=>handleEdit(todo)}>EDIT</button>
+                    <li key={todo.id} className='list-none w-full h-10 my-auto mt-3 md:px-5  text-start' >
+                        <input className=' p-2 w-1/2 md:w-3/5 rounded-lg' type="text" name="" value={todo.title} onChange={(e)=>e.preventDefault()} id="" />
+                        <button className='bg-green-600 p-2 mx-1 md:mx-2 rounded-lg' onClick={()=>handleEdit(todo)}>EDIT</button>
                         <button className='bg-red-500 p-2 rounded-lg ' onClick={()=>handleDelete(todo)}>DELETE</button>
                     </li>
                 )
