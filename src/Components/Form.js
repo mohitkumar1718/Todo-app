@@ -52,14 +52,14 @@ const Form = ({input,setInput,list,setList ,editTodo, setEditTodo}) => {
     
     <form
     onSubmit={onFormSubmit} 
-    className='p-2 mx-auto mt-10 bg-indigo-700 text-start' action="">
+    className='p-2 mx-auto mt-10 bg-indigo-700 text-start justify-between flex ' action="">
         <input 
         value={input} 
         onChange={onInputChange} 
-        className='w-2/3 h-10 bg-stone-900 text-white px-2' 
+        className='w-4/5  h-10 bg-stone-900 text-white px-2 rounded-l-xl' 
         type="text" 
         placeholder='Enter Todo task here' />
-        <button className=' w-1/3 bg-stone-600 h-10 px-2 rounded-xl '>ADD</button>
+        <button className=' w-1/5  bg-rose-600 text-white h-10 px-2 rounded-r-lg '>ADD</button>
     </form>
   )
 }

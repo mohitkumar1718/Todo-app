@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './Components/Header';
 import Form from './Components/Form';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import TodoList from './Components/TodoList';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
   return (
    <div className='text-center w-screen bg-indigo-600 h-screen'>
      <Header/>
-     <div className='w-1/2 h-full bg-slate-900 mx-auto rounded-2xl'>
+     <div className='w-1/2 min-h-64 bg-slate-900 mx-auto rounded-2xl'>
      <Form 
       input={input}
       setInput={setInput}
